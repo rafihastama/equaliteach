@@ -24,7 +24,7 @@
   />
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <p class="logo">EQUALITEACH</p>
     <div class="navbar-nav">
       <a href="#/home">Home</a>
@@ -37,8 +37,6 @@
   </nav>
   
   <section class="hero">
-    
-    
     <img class="home-item" alt="" src="./public/vector-16.svg" />
     
     <img class="home-inner" alt="" src="./public/group-162534.svg" />
@@ -141,14 +139,22 @@
       </div>
 
       <div class="bentuk4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Excepturi fugit eum optio sint ratione perspiciatis, exercitationem 
-          ullam enim fuga! Cum dolorum cumque, a dolores ab doloremque quia! 
+        <p br>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Excepturi fugit eum optio sint ratione perspiciatis, exercitationem<br>
+          ullam enim fuga! Cum dolorum cumque, a dolores ab doloremque quia!<br>
           Deserunt, harum cumque.</p>
         <button class="btn-smr2">See More</button>
       </div>
     </div>
   </section>
+
+  <div id="chatContainer" class="chat-container">
+    <button onclick="toggleChat()" id="btn-diskusi">Diskusi</button>
+    
+    <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
+  </div>
+  
+  <script src="script.js"></script>
   <footer>
     <p>EQUALITEACH</p>
     <p>© 2023 Equaliteach, All Rights Reserved</p> 
