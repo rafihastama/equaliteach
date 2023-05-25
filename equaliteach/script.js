@@ -23,19 +23,3 @@ function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-function toggleChat() {
-    var chatBox = document.getElementById("chatBox");
-    if (chatBoxVisible) {
-        closeChat();
-    } else {
-        chatBox.style.display = "block";
-        chatBoxVisible = true;
-    }
-}
-
-function closeChat() {
-    var chatBox = document.getElementById("chatBox");
-    chatBox.style.display = "none";
-    chatBoxVisible = false;
-}
