@@ -1,5 +1,20 @@
 import '../styles/global.css'
 import '../styles/index.css'
+import App from './views/app'
+
+const app = new App({
+  button: document.querySelector('#menu'),
+  drawer: document.querySelector('#drawer'),
+  content: document.querySelector('#mainContent')
+})
+
+window.addEventListener('hashchange', () => {
+  app.renderPage()
+})
+
+window.addEventListener('DOMContentLoaded', () => {
+  app.renderPage()
+})
 
 /* js navbar berubah warna */
 window.addEventListener('scroll', function () {
