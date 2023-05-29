@@ -8,7 +8,7 @@ const homeItemTemplate = () => `
       <p class="hero-let"><span>Empowerment</span> for</p>
       <p class="hero-let">Everyone</p>
       <p class="hero-p">Transforming Lives Through Inclusive Education</p>
-      <button class="btn-start">Get started</button>
+      <a href="#middle" class="btn-start">Get started</a>
     </div>
 
     <div class="home-child1"></div>
@@ -26,13 +26,23 @@ const homeItemTemplate = () => `
     src="/assets/herohub-gender-1@2x.png"
   />
   </div>
+
+  <div class="middle" id="middle">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </div>
   
   <section class="content">
     <div class="content1">
-      <h2 class="judul-content">Kenapa hal ini<br>penting?</h2>
+      <h2 class="judul-content">Kenapa hal ini<br>penting?</h2><br>
       <p>Beberapa point Gender Equality harus<br>
         disuarakan</p>
-      <a href="#/content">See More</a>
     </div>
 
     <div class="content2">
@@ -85,7 +95,7 @@ const homeItemTemplate = () => `
       Excepturi fugit eum optio sint ratione perspiciatis, exercitationem<br>
       ullam enim fuga! Cum dolorum cumque, a dolores ab doloremque quia!<br>
       Deserunt, harum cumque.</p>
-        <button class="btn-smr1">See More</button>
+        <a href="#/trendingtopic1" onClick="scrollToTop()" class="btn-smr1">See More</a>
       </div>
 
       <div class="bentuk2">
@@ -109,53 +119,70 @@ const homeItemTemplate = () => `
           Excepturi fugit eum optio sint ratione perspiciatis, exercitationem<br>
           ullam enim fuga! Cum dolorum cumque, a dolores ab doloremque quia!<br>
           Deserunt, harum cumque.</p>
-        <button class="btn-smr2">See More</button>
+        <a href="#/trendingtopic2" onClick="scrollToTop()" class="btn-smr2">See More</a>
       </div>
     </div>
   </section>
 
   <div id="chatContainer" class="chat-container">
-    <button onclick="toggleChat()" id="btn-diskusi">Diskusi</button>
+    <button onclick="scrollToTop()" id="btn-diskusi">Diskusi</button>
     
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
   </div>`
 
 const contentSelection = () => `
-<div class="home-child1"></div>
-<div class="pilihan-content">
-  <div class="top-row">
-    <div class="content-bentuk1">
-      <img class="content-gender-equality-0-1" alt="" src="/assets/gender-equality-0-1.png" />
+  <div class="home-child1"></div>
+  <div class="pilihan-content">
+    <div class="top-row">
+      <div class="content-bentuk1">
+        <img class="content-gender-equality-0-1" alt="" src="/assets/gender-equality-0-1.png" />
+      </div>
+        
+      <div class="content-bentuk2">
+        <p>GENDER<br>
+        EQUALITY</p>
+        <a href="#/genderequality" onClick="scrollToTop()" class="content-btn-smr1">See More</a>
+      </div>
     </div>
+  
+    <div class="bottom-row">
+      <div class="content-bentuk3">
+        <p>TOKOH WANITA INDONESIA</p>
+        <a href="#/twi" onClick="scrollToTop()" class="content-btn-smr2">See More</a>
+      </div>
       
-    <div class="content-bentuk2">
-      <p>GENDER<br>
-      EQUALITY</p>
-      <button class="content-btn-smr1">See More</button>
+      <div class="content-bentuk4">
+        <img class="content-gender-equality-1-1" alt="" src="/assets/gender-equality-1-1.png" />
+      </div>
     </div>
   </div>
-
-  <div class="bottom-row">
-    <div class="content-bentuk3">
-      <p>TOKOH WANITA INDONESIA</p>
-      <button class="content-btn-smr2">See More</button>
-    </div>
-    
-    <div class="content-bentuk4">
-      <img class="content-gender-equality-1-1" alt="" src="/assets/gender-equality-1-1.png" />
-    </div>
-  </div>
-</div>
-
-    <div id="chatContainer" class="chat-container">
-    <button onclick="toggleChat()" id="btn-diskusi">Diskusi</button>
-    
+  
+  <div id="chatContainer" class="chat-container">
+    <button onclick="scrollToTop()" id="btn-diskusi">Diskusi</button>
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
-    </div>
-</div>
+  </div>
+  </div>
+  `
+
+const genderEqualityContent = () => `
+<div class="home-child1"></div>
+`
+
+const tokohWanitaIndonesiaContent = () => `
+<div class="home-child1"></div>
+`
+
+const trendingTopic1Content = () => `
+`
+
+const trendingTopic2Content = () => `
 `
 
 export {
   homeItemTemplate,
-  contentSelection
+  contentSelection,
+  genderEqualityContent,
+  tokohWanitaIndonesiaContent,
+  trendingTopic1Content,
+  trendingTopic2Content
 }

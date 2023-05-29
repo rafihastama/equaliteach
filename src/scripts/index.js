@@ -1,6 +1,7 @@
 import '../styles/global.css'
 import '../styles/index.css'
 import App from './views/app'
+import routes from '../routes/routes'
 
 const app = new App({
   button: document.querySelector('#menu'),
@@ -9,11 +10,11 @@ const app = new App({
 })
 
 window.addEventListener('hashchange', () => {
-  app.renderPage()
+  app.renderPage(routes)
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-  app.renderPage()
+  app.renderPage(routes)
 })
 
 /* js navbar berubah warna */
@@ -27,21 +28,23 @@ window.addEventListener('scroll', function () {
   }
 })
 
-function scrollFunction () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('btnScrollToTop').style.display = 'block'
-  } else {
-    document.getElementById('btnScrollToTop').style.display = 'none'
+function handleScroll () {
+  const btnScrollToTop = document.querySelector('#btnScrollToTop')
+  if (btnScrollToTop) {
+    if (window.scrollY > 0) {
+      btnScrollToTop.style.display = 'block'
+    } else {
+      btnScrollToTop.style.display = 'none'
+    }
   }
 }
+
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll)
 
 function scrollToTop () {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
-}
-
-window.onscroll = function () {
-  scrollFunction()
 }
 
 window.scrollToTop = scrollToTop
