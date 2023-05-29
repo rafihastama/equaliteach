@@ -237,12 +237,9 @@ h1 {
   transform: translate(100px, 120px);
 }
 .content-bentuk1 {
-  flex: 1;
-  margin-right: 10px;
-  background-color: white;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0 0 20px;
   margin-left: 20%;
-  margin-bottom: 5%;
+  margin-bottom: 200px;
 }
 
 .bentuk2{
@@ -250,9 +247,11 @@ h1 {
   transform: translateX(125px);
 }
 .content-bentuk2 {
-  flex: 0 0 auto;
+  flex: 1;
+  background-color: white;
+  border-radius: 0 20px 20px 0;
   margin-right: 20%;
-  margin-bottom: 5%;
+  margin-bottom: 204px;
 }
 
 
@@ -261,8 +260,11 @@ h1 {
   transform: translate(100px, 25px);
 }
 .content-bentuk3 {
-  flex: 0 0 auto;
+  flex: 1;
   margin-left: 20%;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  margin-bottom: 5px;
 }
 .bentuk1 p {
   font-family: var(--font-jost);
@@ -274,7 +276,7 @@ h1 {
   text-align: center;
 }
 
-.content-bentuk1 p {
+.content-bentuk2 p {
   font-family: var(--font-jost);
   font-weight: 800;
   font-size: 60px;
@@ -286,7 +288,7 @@ h1 {
 }
 .gender-equality-0-1 {
   width: 550px;
-  height: 425px;
+  height: 430px;
 }
 .content-gender-equality-0-1 {
   width: 550px;
@@ -309,9 +311,7 @@ h1 {
   transform: translate(80px, 150px);
 }
 .content-bentuk4 {
-  flex: 1;
-  margin-left: 10px;
-  background-color: white;
+  flex: 0 0 auto;
   border-radius: 20px 20px 20px;
   margin-right: 20%;
 }
@@ -324,7 +324,7 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.content-bentuk4 p {
+.content-bentuk3 p {
   font-family: var(--font-jost);
   font-weight: 800;
   font-size: 60px;
@@ -347,9 +347,9 @@ h1 {
   transform: translate(30px, 100px);
 }
 .content-btn-smr1 {
-  width: 135.63px;
-  height: 53.01px;
-  border-radius: 20px;
+  width: 130px;
+  height: 75px;
+  border-radius: 50px;
   color: white;
   background-color: var(--color-sandybrown);
   font-family: var(--font-jost);
@@ -371,9 +371,9 @@ h1 {
   transform: translate(30px, 125px);
 }
 .content-btn-smr2 {
-  width: 135.63px;
-  height: 53.01px;
-  border-radius: 20px;
+  width: 130px;
+  height: 75px;
+  border-radius: 50px;
   color: white;
   background-color: var(--color-sandybrown);
   font-family: var(--font-jost);
