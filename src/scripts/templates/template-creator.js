@@ -125,23 +125,24 @@ const contentSelection = () => `
 <div class="pilihan-content">
   <div class="top-row">
     <div class="content-bentuk1">
-      <p>GENDER EQUALITY</p>
-      <button class="content-btn-smr1">See More</button>
+      <img class="content-gender-equality-0-1" alt="" src="/assets/gender-equality-0-1.png" />
     </div>
-
+      
     <div class="content-bentuk2">
-      <img class="content-gender-equality-0-1" alt="" src="/assets/gender-equality-0-1@2x.png" />
+      <p>GENDER<br>
+      EQUALITY</p>
+      <button class="content-btn-smr1">See More</button>
     </div>
   </div>
 
   <div class="bottom-row">
     <div class="content-bentuk3">
-      <img class="content-gender-equality-1-1" alt="" src="/assets/gender-equality-1-1@2x.png" />
-    </div>
-
-    <div class="content-bentuk4">
       <p>TOKOH WANITA INDONESIA</p>
       <button class="content-btn-smr2">See More</button>
+    </div>
+    
+    <div class="content-bentuk4">
+      <img class="content-gender-equality-1-1" alt="" src="/assets/gender-equality-1-1.png" />
     </div>
   </div>
 </div>
