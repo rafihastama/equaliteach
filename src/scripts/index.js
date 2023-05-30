@@ -70,32 +70,3 @@ btnPopup.addEventListener('click', () => {
 iconClose.addEventListener('click', () => {
   wrapper.classList.remove('active-popup')
 })
-
-// Memberi Efek Blur
-const blurPageNav = document.querySelector('.navbar')
-const blurPageMain = document.querySelector('main')
-const blurFooter = document.querySelector('footer')
-
-btnPopup.addEventListener('click', () => {
-  blurPageNav.classList.add('blur')
-})
-
-iconClose.addEventListener('click', () => {
-  blurPageNav.classList.remove('blur')
-})
-
-btnPopup.addEventListener('click', () => {
-  blurPageMain.classList.add('blur')
-})
-
-iconClose.addEventListener('click', () => {
-  blurPageMain.classList.remove('blur')
-})
-
-btnPopup.addEventListener('click', () => {
-  blurFooter.classList.add('blur')
-})
-
-iconClose.addEventListener('click', () => {
-  blurFooter.classList.remove('blur')
-})
