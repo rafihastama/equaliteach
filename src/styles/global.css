@@ -6,6 +6,7 @@
     border: none;
     text-decoration: none;
     zoom: 98%;
+  scroll-behavior: smooth;
 }
 
 body {
