@@ -667,3 +667,70 @@ footer p {
 button {
   cursor: pointer;
 }
+
+.diskusi-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #005a4a;
+}
+
+.diskusi-container h4 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: var(--font-size-41xl);
+}
+
+#infoUserDiskusi #usernameDiskusi{
+  font-family: var(--font-jost);
+  font-size: var(--font-size-mid);
+  font-weight: bold;
+  color: white;
+}
+
+#infoUserDiskusi #tanggalPosting {
+  font-size: 15px;
+}
+
+#infoUserDiskusi #judulDiskusi {
+  font-size: 40px;
+}
+
+#isiDiskusi {
+  background-color: sandybrown;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#infoIsiDiskusi {
+  display: flex;
+  justify-content: space-between;
+}
+
+#buatDiskusi {
+  margin-top: 10px;
+}
+
+#buatDiskusi p{
+  color: white;
+}
+
+#buatDiskusi #pesan {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.diskusi-container #btnPosting {
+  background-color: var(--color-sandybrown);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+hr {
+  color: white;
+  border: 1px solid black;
+}
