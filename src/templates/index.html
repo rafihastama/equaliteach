@@ -126,7 +126,24 @@
     </div>
     <button id="btnPosting">Posting</button>
   </div>
-  
+
+  <!-- update isi pada bahasdiskusi -->
+  <script>
+    document.getElementById("btnPosting").addEventListener("click", function() {
+      var pesan = document.getElementById("pesan").value;
+      document.getElementById("bahasDiskusi").textContent = pesan;
+    });
+  </script>
+
+<!-- atur tanggal saat posting -->
+<script>
+  document.getElementById("btnPosting").addEventListener("click", function() {
+    var tanggal = new Date();
+    var tanggalPosting = tanggal.toLocaleString();
+    document.getElementById("tanggalPosting").textContent = tanggalPosting;
+  });
+</script>
+
   <main id="mainContent"></main>
 
   <footer>

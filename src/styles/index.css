@@ -669,10 +669,10 @@ button {
 }
 
 .diskusi-container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #005a4a;
+  background-color: var(--color-gray-200);
 }
 
 .diskusi-container h4 {
@@ -691,10 +691,12 @@ button {
 
 #infoUserDiskusi #tanggalPosting {
   font-size: 15px;
+  color: #ffffff;
 }
 
 #infoUserDiskusi #judulDiskusi {
-  font-size: 40px;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 #isiDiskusi {
@@ -702,6 +704,11 @@ button {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+}
+
+#deskripsiDiskusi{
+  font-size: 17px;
+  color: #ffffff;
 }
 
 #infoIsiDiskusi {
@@ -718,9 +725,12 @@ button {
 }
 
 #buatDiskusi #pesan {
+  text-align: left;
   width: 100%;
   height: 50px;
   border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .diskusi-container #btnPosting {
@@ -728,9 +738,10 @@ button {
   color: white;
   padding: 10px;
   border-radius: 10px;
+  transform: translateY(10px);
 }
 
 hr {
   color: white;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
 }
