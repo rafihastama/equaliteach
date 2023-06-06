@@ -125,7 +125,7 @@ const homeItemTemplate = () => `
   </section>
 
   <div id="chatContainer" class="chat-container">
-    <button onclick="scrollToTop()" id="btn-diskusi">Diskusi</button>
+    <button onclick="window.location.href='#/discussionroom'" id="btn-diskusi">Diskusi</button>
     
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
   </div>`
@@ -158,11 +158,38 @@ const contentSelection = () => `
   </div>
   
   <div id="chatContainer" class="chat-container">
-    <button onclick="scrollToTop()" id="btn-diskusi">Diskusi</button>
+    <button onclick="window.location.href='#/discussionroom'" id="btn-diskusi">Diskusi</button>
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
   </div>
   </div>
   `
+
+const discussionRoom = () => `
+<div class="diskusi-container">
+    <h4>FORUM DISKUSI</h4>
+    <div id="infoUserDiskusi">
+      <label id="usernameDiskusi">(USER)</label>
+      <div id="tanggalPosting">(TANGGAL POSTING)</div>
+      <p id="judulDiskusi">(Judul Diskusi)</p>
+      <p id="deskripsiDiskusi">(Deskripsi Diskusi)</p>
+    </div>
+    <hr>
+    <div id="isiDiskusi">
+      <div id="infoIsiDiskusi">
+        <label id="usernameDiskusi">(USER)</label>
+        <div id="tanggalPosting">(TANGGAL POSTING)</div>
+      </div>
+      <p id="bahasDiskusi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero at officiis dolore alias iure nulla neque quo, quod optio odit laudantium provident voluptas perferendis ducimus voluptate voluptates itaque corrupti fugit?
+      </p>
+    </div>
+    <hr>
+    <div id="buatDiskusi">
+      <p>TAMBAHKAN KOMENTAR</p>
+      <input type="text" id="pesan" placeholder="masukkan komentar">
+    </div>
+    <button id="btnPosting">Posting</button>
+  </div>
+`
 
 const genderEqualityContent = () => `
 <div class="home-child1"></div>
@@ -184,5 +211,6 @@ export {
   genderEqualityContent,
   tokohWanitaIndonesiaContent,
   trendingTopic1Content,
-  trendingTopic2Content
+  trendingTopic2Content,
+  discussionRoom
 }
