@@ -12,7 +12,14 @@ const DiscussionRoom = {
   },
 
   async afterRender () {
+    document.getElementById('btnPosting').addEventListener('click', function () {
+      const pesan = document.getElementById('pesan').value
+      const tanggal = new Date()
+      const tanggalPosting = tanggal.toLocaleString()
 
+      document.getElementById('bahasDiskusi').textContent = pesan
+      document.getElementById('tanggalPosting').textContent = tanggalPosting
+    })
   }
 }
 

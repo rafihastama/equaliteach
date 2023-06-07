@@ -733,7 +733,7 @@ button {
   margin: 10px;
 }
 
-.diskusi-container #btnPosting {
+#btnPosting {
   background-color: var(--color-sandybrown);
   color: white;
   padding: 10px;

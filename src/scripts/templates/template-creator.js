@@ -186,8 +186,8 @@ const discussionRoom = () => `
     <div id="buatDiskusi">
       <p>TAMBAHKAN KOMENTAR</p>
       <input type="text" id="pesan" placeholder="masukkan komentar">
+      <button id="btnPosting">Posting</button>
     </div>
-    <button id="btnPosting">Posting</button>
   </div>
 `
 
