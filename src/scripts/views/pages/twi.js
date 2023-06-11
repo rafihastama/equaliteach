@@ -1,3 +1,4 @@
+import EqualiteachSource from '../../data/equaliteach-source'
 import { tokohWanitaIndonesiaContent } from '../../templates/template-creator'
 
 const TokohWanitaIndonesia = {
@@ -6,14 +7,18 @@ const TokohWanitaIndonesia = {
           <div>
             <div class="gender-equality-item-container">
             <h1>Tokoh Wanita Indonesia</h1>
-            ${tokohWanitaIndonesiaContent()}
             </div>
+            <div id="twiContentContainer"></div>
           </div>
         `
   },
 
   async afterRender () {
-
+    const contents = await EqualiteachSource.contentTwi()
+    const twiContainer = document.querySelector('#twiContentContainer')
+    contents.forEach((content) => {
+      twiContainer.innerHTML += tokohWanitaIndonesiaContent(content)
+    })
   }
 }
 
