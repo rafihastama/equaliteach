@@ -1,3 +1,4 @@
+import EqualiteachSource from '../../data/equaliteach-source'
 import { trendingTopic1Content } from '../../templates/template-creator'
 
 const TrendingTopic1 = {
@@ -5,15 +6,19 @@ const TrendingTopic1 = {
     return `
           <div>
             <div class="trending-item-container">
-            <h1>will display one of the trending topic content</h1>
-            ${trendingTopic1Content()}
+            <h1>will display one of the trending topic content 1</h1>
             </div>
+            <div id="trending1ContentContainer"></div>
           </div>
         `
   },
 
   async afterRender () {
-
+    const contents = await EqualiteachSource.contentTc()
+    const tc1Container = document.querySelector('#trending1ContentContainer')
+    contents.forEach((content) => {
+      tc1Container.innerHTML += trendingTopic1Content(content)
+    })
   }
 }
 

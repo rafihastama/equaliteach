@@ -191,18 +191,68 @@ const discussionRoom = () => `
   </div>
 `
 
-const genderEqualityContent = () => `
+const genderEqualityContent = (contents) => `
 <div class="home-child1"></div>
+<div class="gc-item">
+    <div class="gc-item__header">
+      <img class="gc-item__header__poster" alt="${contents.name || '-'}"
+           src="${contents.image}">
+    </div>
+    <div class="gc-item__content">
+      <h3 class="gc__title"><a href="/#/detail/${contents.id}">${contents.name || '-'}</a></h3>
+      <p>${contents.description || '-'}</p>
+    </div>
+  </div>
 `
 
-const tokohWanitaIndonesiaContent = () => `
+const tokohWanitaIndonesiaContent = (contents) => `
 <div class="home-child1"></div>
+<div class="twi-item">
+    <div class="twi-item__header">
+      <img class="twi-item__header__poster" alt="${contents.name || '-'}"
+           src="${contents.image}">
+    </div>
+    <div class="twi-item__content">
+      <h3 class="twi__title"><a href="/#/detail/${contents.id}">${contents.name || '-'}</a></h3>
+      <p>${contents.description || '-'}</p>
+    </div>
+  </div>
 `
 
-const trendingTopic1Content = () => `
+const trendingTopic1Content = (content) => `
+<h2 class="restaurant__title">${content.name}</h2>
+  <img class="restaurant__poster" src="${content.image}" alt="${content.name}" />
+  <div class="restaurant__info">
+    <h3>Information</h3>
+    <h4>Nama Tokoh</h4>
+    <p>${content.name}</p>
+    <h4>Deskripsi</h4>
+    <p>${content.description}</p>
+  </div>
 `
 
-const trendingTopic2Content = () => `
+const trendingTopic2Content = (content) => `
+<h2 class="restaurant__title">${content.name}</h2>
+  <img class="restaurant__poster" src="${content.image}" alt="${content.name}" />
+  <div class="restaurant__info">
+    <h3>Information</h3>
+    <h4>Nama Tokoh</h4>
+    <p>${content.name}</p>
+    <h4>Deskripsi</h4>
+    <p>${content.description}</p>
+  </div>
+`
+
+const detailPage = (content) => `
+<h2 class="restaurant__title">${content.name}</h2>
+  <img class="restaurant__poster" src="${content.image}" alt="${content.name}" />
+  <div class="restaurant__info">
+    <h3>Information</h3>
+    <h4>Nama Tokoh</h4>
+    <p>${content.name}</p>
+    <h4>Deskripsi</h4>
+    <p>${content.description}</p>
+  </div>
 `
 
 export {
@@ -212,5 +262,6 @@ export {
   tokohWanitaIndonesiaContent,
   trendingTopic1Content,
   trendingTopic2Content,
-  discussionRoom
+  discussionRoom,
+  detailPage
 }
