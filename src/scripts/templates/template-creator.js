@@ -1,4 +1,4 @@
-const homeItemTemplate = () => `
+const homeItemTemplate = (content) => `
 <section class="hero">
     <img class="home-item" alt="" src="/assets/vector-16.svg" />
     
@@ -85,7 +85,7 @@ const homeItemTemplate = () => `
     </div>
   </section>
 
-  <h3>Trending Topic</h3>
+  <h3 class="trending-topicjud">Trending Topic</h3>
 
   <section class="trending-topic">
     
@@ -193,14 +193,14 @@ const discussionRoom = () => `
 
 const genderEqualityContent = (contents) => `
 <div class="home-child1"></div>
-<div class="gc-item">
-    <div class="gc-item__header">
-      <img class="gc-item__header__poster" alt="${contents.name || '-'}"
-           src="${contents.image}">
+<div class="gec-item">
+    <div class="gec-item__header">
+    <a href="/#/detail-gec/${contents.id}">
+      <img class="gec-item__header__poster" alt="${contents.name || '-'}"
+           src="${contents.image}" href="/#/detail-gec/${contents.id}">
     </div>
-    <div class="gc-item__content">
-      <h3 class="gc__title"><a href="/#/detail/${contents.id}">${contents.name || '-'}</a></h3>
-      <p>${contents.description || '-'}</p>
+    <div class="gec-item__content">
+      <h3 class="gec__title"><a href="/#/detail-gec/${contents.id}">${contents.name || '-'}</a></h3>
     </div>
   </div>
 `
@@ -209,45 +209,47 @@ const tokohWanitaIndonesiaContent = (contents) => `
 <div class="home-child1"></div>
 <div class="twi-item">
     <div class="twi-item__header">
+    <a href="/#/detail-twi/${contents.id}">
       <img class="twi-item__header__poster" alt="${contents.name || '-'}"
-           src="${contents.image}">
+           src="${contents.image}" href="/#/detail-twi/${contents.id}">
     </div>
     <div class="twi-item__content">
-      <h3 class="twi__title"><a href="/#/detail/${contents.id}">${contents.name || '-'}</a></h3>
-      <p>${contents.description || '-'}</p>
+      <h3 class="twi__title"><a href="/#/detail-twi/${contents.id}">${contents.name || '-'}</a></h3>
     </div>
   </div>
 `
 
 const trendingTopic1Content = (content) => `
-<h2 class="restaurant__title">${content.name}</h2>
-  <img class="restaurant__poster" src="${content.image}" alt="${content.name}" />
-  <div class="restaurant__info">
-    <h3>Information</h3>
-    <h4>Nama Tokoh</h4>
-    <p>${content.name}</p>
-    <h4>Deskripsi</h4>
-    <p>${content.description}</p>
+<div class="tc1-item">
+    <div class="tc1-item__header">
+      <img class="tc1-item__header__poster" alt="${content.name || '-'}"
+           src="${content.image}">
+    </div>
+    <div class="tc1-item__content">
+      <h3 class="tc1__title"><a href="/#/detail-tc1/${content.id}">${content.name || '-'}</a></h3>
+      <p>${content.description || '-'}</p>
+    </div>
   </div>
 `
 
 const trendingTopic2Content = (content) => `
-<h2 class="restaurant__title">${content.name}</h2>
-  <img class="restaurant__poster" src="${content.image}" alt="${content.name}" />
-  <div class="restaurant__info">
-    <h3>Information</h3>
-    <h4>Nama Tokoh</h4>
-    <p>${content.name}</p>
-    <h4>Deskripsi</h4>
-    <p>${content.description}</p>
+<div class="tc2-item">
+    <div class="tc2-item__header">
+      <img class="tc2-item__header__poster" alt="${content.name || '-'}"
+           src="${content.image}">
+    </div>
+    <div class="tc2-item__content">
+      <h3 class="tc2__title"><a href="/#/detail-tc2/${content.id}">${content.name || '-'}</a></h3>
+      <p>${content.description || '-'}</p>
+    </div>
   </div>
 `
 
 const detailPage = (content) => `
-<h2 class="restaurant__title">${content.name}</h2>
-  <img class="restaurant__poster" src="${content.image}" alt="${content.name}" />
-  <div class="restaurant__info">
-    <h3>Information</h3>
+<img class="detail__poster" src="${content.image}" alt="${content.name}" />
+<h2 class="detail__title">${content.name}</h2>
+  <div class="detail__info">
+    <h3>Informasi</h3>
     <h4>Nama Tokoh</h4>
     <p>${content.name}</p>
     <h4>Deskripsi</h4>

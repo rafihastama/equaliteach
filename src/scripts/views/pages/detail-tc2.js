@@ -2,7 +2,7 @@ import UrlParser from '../../../routes/url-parser'
 import EqualiteachSource from '../../data/equaliteach-source'
 import { detailPage } from '../../templates/template-creator'
 
-const DetailTwi = {
+const DetailTc = {
   async render () {
     return `
         <h2>Detail Page</h2>
@@ -12,10 +12,10 @@ const DetailTwi = {
 
   async afterRender () {
     const url = UrlParser.parseActiveUrlWithoutCombiner()
-    const twi = await EqualiteachSource.detailTwiContent(url.id)
-    const twiContainer = document.querySelector('#contentDetail')
-    twiContainer.innerHTML = detailPage(twi)
+    const tc2 = await EqualiteachSource.detailTcContent(url.id)
+    const tc2Container = document.querySelector('#contentDetail')
+    tc2Container.innerHTML = detailPage(tc2)
   }
 }
 
-export default DetailTwi
+export default DetailTc

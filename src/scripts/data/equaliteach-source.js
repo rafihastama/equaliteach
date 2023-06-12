@@ -21,17 +21,20 @@ class EqualiteachSource {
 
   static async detailTwiContent (id) {
     const response = await fetch(API_ENDPOINT.DETAIL_TWI(id))
-    return response.json()
+    const responseJson = await response.json()
+    return responseJson.content
   }
 
   static async detailGecContent (id) {
     const response = await fetch(API_ENDPOINT.DETAIL_GEC(id))
-    return response.json()
+    const responseJson = await response.json()
+    return responseJson.content
   }
 
   static async detailTcContent (id) {
     const response = await fetch(API_ENDPOINT.DETAIL_TC(id))
-    return response.json()
+    const responseJson = await response.json()
+    return responseJson.content
   }
 }
 

@@ -1,5 +1,6 @@
 import UrlParser from '../../../routes/url-parser'
 import EqualiteachSource from '../../data/equaliteach-source'
+import { detailPage } from '../../templates/template-creator'
 
 const DetailGec = {
   async render () {
@@ -11,8 +12,9 @@ const DetailGec = {
 
   async afterRender () {
     const url = UrlParser.parseActiveUrlWithoutCombiner()
-    const content = await EqualiteachSource.detailGecContent(url.id)
-    console.log(content)
+    const gec = await EqualiteachSource.detailGecContent(url.id)
+    const gecContainer = document.querySelector('#contentDetail')
+    gecContainer.innerHTML = detailPage(gec)
   }
 }
 

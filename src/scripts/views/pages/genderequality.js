@@ -8,16 +8,16 @@ const GenderEquality = {
             <div class="gender-equality-item-container">
             <h1>Gender Equality</h1>
             </div>
-            <div id="gcContentContainer"></div>
+            <div id="gecContentContainer"></div>
           </div>
         `
   },
 
   async afterRender () {
     const contents = await EqualiteachSource.contentGec()
-    const GcContainer = document.querySelector('#gcContentContainer')
+    const GecContainer = document.querySelector('#gecContentContainer')
     contents.forEach((content) => {
-      GcContainer.innerHTML += genderEqualityContent(content)
+      GecContainer.innerHTML += genderEqualityContent(content)
     })
   }
 }

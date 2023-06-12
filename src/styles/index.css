@@ -373,7 +373,7 @@ footer.blur {
   color: white;
 }
 
-h3 {
+.trending-topicjud {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,4 +749,56 @@ hr {
 .diskusi-room-container {
   width: 100%;
   margin: 60px auto;
+}
+
+#twiContentContainer,
+#gecContentContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.twi-item,
+.gec-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  background-color: #ffffff;
+}
+
+.twi-item__header,
+.gec-item__header {
+  margin-bottom: 10px;
+}
+
+.twi-item__header__poster,
+.gec-item__header__poster {
+  width: 100%;
+  height: auto;
+}
+
+.twi-item__content,
+.gec-item__content {
+  text-align: center;
+}
+
+.twi__title,
+.gec__title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.twi-item__content p,
+.gec-item__content p {
+  font-size: 25px;
+  color: #666;
+}
+
+#contentDetail {
+  background-color: white;
+  text-align: center;
 }
