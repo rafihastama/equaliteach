@@ -192,7 +192,6 @@ const discussionRoom = () => `
 `
 
 const genderEqualityContent = (contents) => `
-<div class="home-child1"></div>
 <div class="gec-item">
     <div class="gec-item__header">
     <a href="/#/detail-gec/${contents.id}">
@@ -206,7 +205,6 @@ const genderEqualityContent = (contents) => `
 `
 
 const tokohWanitaIndonesiaContent = (contents) => `
-<div class="home-child1"></div>
 <div class="twi-item">
     <div class="twi-item__header">
     <a href="/#/detail-twi/${contents.id}">
@@ -249,10 +247,7 @@ const detailPage = (content) => `
 <img class="detail__poster" src="${content.image}" alt="${content.name}" />
 <h2 class="detail__title">${content.name}</h2>
   <div class="detail__info">
-    <h3>Informasi</h3>
-    <h4>Nama Tokoh</h4>
     <p>${content.name}</p>
-    <h4>Deskripsi</h4>
     <p>${content.description}</p>
   </div>
 `

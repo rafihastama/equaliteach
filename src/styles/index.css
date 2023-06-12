@@ -754,18 +754,19 @@ hr {
 #twiContentContainer,
 #gecContentContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 50px;
 }
 
 .twi-item,
 .gec-item {
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin-bottom: 10px;
-  width: 500px;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -778,6 +779,7 @@ hr {
 .gec-item__header__poster {
   width: 100%;
   height: auto;
+  border-radius: 50px;
 }
 
 .twi-item__content,

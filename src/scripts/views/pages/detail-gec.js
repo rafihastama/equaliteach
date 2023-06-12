@@ -5,7 +5,6 @@ import { detailPage } from '../../templates/template-creator'
 const DetailGec = {
   async render () {
     return `
-        <h2>Detail Page</h2>
         <div id="contentDetail"></div>
       `
   },

@@ -6,7 +6,6 @@ const TrendingTopic2 = {
     return `
           <div>
             <div class="trending-item-container">
-            <h1>will display one of the trending topic content 2</h1>
             </div>
             <div id="trending2ContentContainer"></div>
           </div>
