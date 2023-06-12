@@ -668,6 +668,14 @@ button {
   cursor: pointer;
 }
 
+.deletebutton{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 .diskusi-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -675,11 +683,18 @@ button {
   background-color: var(--color-gray-200);
 }
 
+.infouser{
+  position: relative;
+  top: 40px;
+}
+
 .diskusi-container h4 {
   display: flex;
   justify-content: center;
   color: white;
   font-size: var(--font-size-41xl);
+  position: relative;
+  top: -40px;
 }
 
 #infoUserDiskusi #usernameDiskusi{
@@ -731,6 +746,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  border: 3px solid var(--color-sandybrown);
 }
 
 #btnPosting {
@@ -739,6 +755,7 @@ button {
   padding: 10px;
   border-radius: 10px;
   transform: translateY(10px);
+  font-weight: bold;
 }
 
 hr {
