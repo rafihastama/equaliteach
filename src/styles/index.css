@@ -794,6 +794,17 @@ hr {
   margin-bottom: 5px;
 }
 
+.twi__title a,
+.gec__title a {
+  color: #000000;
+}
+
+.twi__title a:hover ,
+.gec__title a:hover{
+  color: var(--color-sandybrown);
+  font-size: 40.5px;
+}
+
 .twi-item__content p,
 .gec-item__content p {
   font-size: 25px;
@@ -803,4 +814,27 @@ hr {
 #contentDetail {
   background-color: white;
   text-align: center;
+  width: 700px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 32%;
+  border: #005a4a solid 5px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+#contentDetail img {
+  border-radius: 25px;
+  width: 500px;
+}
+
+#contentDetail h2 {
+  font-size: 31px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contentDetail .detail__info p {
+  font-size: 25px;
 }

@@ -247,7 +247,6 @@ const detailPage = (content) => `
 <img class="detail__poster" src="${content.image}" alt="${content.name}" />
 <h2 class="detail__title">${content.name}</h2>
   <div class="detail__info">
-    <p>${content.name}</p>
     <p>${content.description}</p>
   </div>
 `
