@@ -166,7 +166,15 @@ const contentSelection = () => `
 
 const discussionRoom = () => `
 <div class="diskusi-container">
-    <h4>FORUM DISKUSI</h4>
+  <h4>FORUM DISKUSI</h4>
+    <div id="buatDiskusi">
+      <p>TAMBAHKAN KOMENTAR</p>
+        <input type="text" id="pesan" placeholder="Masukkan Komentar">
+        <button id="btnPosting">Posting</button>
+    </div>
+
+    <div class="infouser">
+    <hr>
     <div id="infoUserDiskusi">
       <label id="usernameDiskusi">(USER)</label>
       <div id="tanggalPosting">(TANGGAL POSTING)</div>
@@ -177,16 +185,10 @@ const discussionRoom = () => `
     <div id="isiDiskusi">
       <div id="infoIsiDiskusi">
         <label id="usernameDiskusi">(USER)</label>
-        <div id="tanggalPosting">(TANGGAL POSTING)</div>
+        <div id="tanggalPosting2">(TANGGAL POSTING)</div>
       </div>
-      <p id="bahasDiskusi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero at officiis dolore alias iure nulla neque quo, quod optio odit laudantium provident voluptas perferendis ducimus voluptate voluptates itaque corrupti fugit?
-      </p>
+      <p id="bahasDiskusi"></p>
     </div>
-    <hr>
-    <div id="buatDiskusi">
-      <p>TAMBAHKAN KOMENTAR</p>
-      <input type="text" id="pesan" placeholder="masukkan komentar">
-      <button id="btnPosting">Posting</button>
     </div>
   </div>
 `
