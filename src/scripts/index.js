@@ -1,5 +1,6 @@
 import '../styles/global.css'
 import '../styles/index.css'
+import '../styles/responsive.css'
 import App from './views/app'
 import routes from '../routes/routes'
 
@@ -98,4 +99,20 @@ btnPopup.addEventListener('click', () => {
 
 iconClose.addEventListener('click', () => {
   blurFooter.classList.remove('blur')
+})
+
+// Hamburger menu
+const navbarNav = document.querySelector('.navbar-nav')
+
+document.querySelector('#hamburgerButton').onclick = () => {
+  navbarNav.classList.toggle('active')
+}
+
+// klik luar hambtn
+const hamburger = document.querySelector('#hamburgerButton')
+
+document.addEventListener('click', function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove('active')
+  }
 })

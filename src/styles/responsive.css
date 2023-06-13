@@ -1,0 +1,143 @@
+@media (max-width: 1200px) {
+    #twiContentContainer,
+    #gecContentContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content-gender-equality-0-1 {
+        width: 500px;
+        height: 400px;
+    }
+
+    .content-gender-equality-1-1 {
+        width: 500px;
+        height: 400px;
+    }
+
+    .content-bentuk2 p {
+        font-size: 55px;
+    }
+
+    .content-bentuk3 p {
+        font-size: 55px;
+    }
+}
+
+
+@media (max-width: 1135px) {
+    .hero-hub-gender-1-icon {
+        width: 950px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content-bentuk2 p {
+        font-size: 45px;
+    }
+
+    .content-bentuk3 p {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1035px) {
+    .content-bentuk2 p {
+        font-size: 30px;
+    }
+
+    .content-bentuk3 p {
+        font-size: 30px;
+    }
+
+    .content-gender-equality-0-1 {
+        width: 450px;
+        height: 350px;
+    }
+
+    .content-gender-equality-1-1 {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #twiContentContainer,
+    #gecContentContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 960px) {
+    .content-btn-smr2 {
+        transform: translate(0, 100px);
+    }
+}
+
+@media (max-width: 768px) {
+    #hamburgerButton {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-let {
+        font-size: 50px;
+    }
+
+    .hero .hero-p  {
+        font-size: 20px;
+    }
+
+    .hero-hub-gender-1-icon {
+        width: 700px;
+        height: 280px;
+    }
+
+    .isi-trending {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-bentuk2 p {
+        font-size: 20px;
+    }
+
+    .content-bentuk3 p {
+        font-size: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .hero-hub-gender-1-icon {
+        width: 650px;
+        height: 280px;
+    }
+}
+
+  @media (max-width: 650px) {
+    #twiContentContainer,
+    #gecContentContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
