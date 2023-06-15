@@ -677,6 +677,25 @@ button {
   cursor: pointer;
 }
 
+.balasan {
+  margin-left: 50px;
+}
+
+.balasanButton {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.balasanInput {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
 .deletebutton{
   background-color: white;
   color: black;
