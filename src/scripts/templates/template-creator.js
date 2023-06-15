@@ -172,7 +172,6 @@ const discussionRoom = () => `
         <input type="text" id="pesan" placeholder="Masukkan Komentar">
         <button id="btnPosting">Posting</button>
     </div>
-
     <div class="infouser">
     <hr>
     <div id="infoUserDiskusi">
