@@ -3,6 +3,7 @@ import '../styles/index.css'
 import '../styles/responsive.css'
 import App from './views/app'
 import routes from '../routes/routes'
+import swRegister from './utils/sw-register'
 
 const app = new App({
   button: document.querySelector('#menu'),
@@ -16,6 +17,10 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   app.renderPage(routes)
+})
+
+window.addEventListener('load', () => {
+  swRegister()
 })
 
 /* js navbar berubah warna */
@@ -49,57 +54,6 @@ function scrollToTop () {
 }
 
 window.scrollToTop = scrollToTop
-
-const wrapper = document.querySelector('.wrapper')
-const loginLink = document.querySelector('.login-link')
-const registerLink = document.querySelector('.register-link')
-const btnPopup = document.querySelector('.btn-login')
-const iconClose = document.querySelector('.icon-close')
-
-registerLink.addEventListener('click', () => {
-  wrapper.classList.add('active')
-})
-
-loginLink.addEventListener('click', () => {
-  wrapper.classList.remove('active')
-})
-
-btnPopup.addEventListener('click', () => {
-  wrapper.classList.add('active-popup')
-})
-
-iconClose.addEventListener('click', () => {
-  wrapper.classList.remove('active-popup')
-})
-
-// Memberi Efek Blur
-const blurPageNav = document.querySelector('.navbar')
-const blurPageMain = document.querySelector('main')
-const blurFooter = document.querySelector('footer')
-
-btnPopup.addEventListener('click', () => {
-  blurPageNav.classList.add('blur')
-})
-
-iconClose.addEventListener('click', () => {
-  blurPageNav.classList.remove('blur')
-})
-
-btnPopup.addEventListener('click', () => {
-  blurPageMain.classList.add('blur')
-})
-
-iconClose.addEventListener('click', () => {
-  blurPageMain.classList.remove('blur')
-})
-
-btnPopup.addEventListener('click', () => {
-  blurFooter.classList.add('blur')
-})
-
-iconClose.addEventListener('click', () => {
-  blurFooter.classList.remove('blur')
-})
 
 // Hamburger menu
 const navbarNav = document.querySelector('.navbar-nav')
