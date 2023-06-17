@@ -91,18 +91,17 @@ const homeItemTemplate = (content) => `
     
     <div class="isi-trending">
       <div class="bentuk1">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-      Excepturi fugit eum optio sint ratione perspiciatis, exercitationem<br>
-      ullam enim fuga! Cum dolorum cumque, a dolores ab doloremque quia!<br>
-      Deserunt, harum cumque.</p>
-        <a href="#/trendingtopic1" onClick="scrollToTop()" class="btn-smr1">See More</a>
+      <p>Sudah tercatat dengan baik bahwa Covid-19 telah menghambat kemajuan perempuan, yang menanggung sebagian besar tugas perawatan. 
+      Namun, menurut The Washington Post, "pandemi hampir terlupakan di Perserikatan Bangsa-Bangsa dan janji-janji tahun lalu tidak terpenuhi." 
+      Tahun lalu. . . . </p>
+        <a href="/#/detail-tc1/_xtWYiF5tiG5vtq1" onClick="scrollToTop()" class="btn-smr1">See More</a>
       </div>
 
       <div class="bentuk2">
         <img
               class="gender-equality-0-1"
               alt=""
-              src="/assets/gender-equality-0-1@2x.png"
+              src="https://i.postimg.cc/RCnSstLc/covid-woman-1-1024x504.jpg"
             />
       </div>
 
@@ -110,23 +109,18 @@ const homeItemTemplate = (content) => `
         <img
         class="gender-equality-1-1"
         alt=""
-        src="/assets/gender-equality-1-1@2x.png"
+        src="https://i.postimg.cc/8cChGHkP/Peran-Laki-laki-dalam-Mendorong-Kepemimpinan-Perempuan.jpg"
       />
       </div>
 
       <div class="bentuk4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-          Excepturi fugit eum optio sint ratione perspiciatis, exercitationem<br>
-          ullam enim fuga! Cum dolorum cumque, a dolores ab doloremque quia!<br>
-          Deserunt, harum cumque.</p>
-        <a href="#/trendingtopic2" onClick="scrollToTop()" class="btn-smr2">See More</a>
+        <p>Pada UNGA tahun ini, terbentuklah Platform Pemimpin Perempuan UNGA yang mengumpulkan kepala negara dan pemerintahan perempuan untuk menyoroti pentingnya kepemimpinan politik perempuan. Selama UNGA, mantan Presiden UNGA mengomentari bahwa. . .</p>
+        <a href="/#/detail-tc2/bhe0y2_5m9STeyvO" onClick="scrollToTop()" class="btn-smr2">See More</a>
       </div>
     </div>
   </section>
 
   <div id="chatContainer" class="chat-container">
-    <button onclick="window.location.href='#/discussionroom'" id="btn-diskusi">Diskusi</button>
-    
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
   </div>`
 
@@ -135,7 +129,7 @@ const contentSelection = () => `
   <div class="pilihan-content">
     <div class="top-row">
       <div class="content-bentuk1">
-        <img class="content-gender-equality-0-1" alt="" src="/assets/gender-equality-0-1.png" />
+        <img class="content-gender-equality-0-1" alt="" src="https://i.postimg.cc/yYpXjw1Q/gender-equall.png" />
       </div>
         
       <div class="content-bentuk2">
@@ -152,13 +146,12 @@ const contentSelection = () => `
       </div>
       
       <div class="content-bentuk4">
-        <img class="content-gender-equality-1-1" alt="" src="/assets/gender-equality-1-1.png" />
+        <img class="content-gender-equality-1-1" alt="" src="https://i.postimg.cc/RhzbM26Q/twii.png" />
       </div>
     </div>
   </div>
   
   <div id="chatContainer" class="chat-container">
-    <button onclick="window.location.href='#/discussionroom'" id="btn-diskusi">Diskusi</button>
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
   </div>
   </div>

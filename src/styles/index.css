@@ -29,6 +29,17 @@
   color: white;
 }
 
+.navbar-nav{
+  display: flex;
+    justify-content: space-between;
+    transition: background-color 0.5s ease;
+    align-items: center;
+    padding: 1.4rem 7%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
 .navbar .navbar-nav a:hover {
   color: var(--color-sandybrown);
 }
@@ -459,7 +470,7 @@ h1 {
   background-color: white;
   border-radius: 0 20px 20px 0;
   margin-right: 20%;
-  margin-bottom: 204px;
+  margin-bottom: 206px;
   position: relative;
   right: 2px;
 }
@@ -479,11 +490,12 @@ h1 {
 .bentuk1 p {
   font-family: var(--font-jost);
   font-weight: 800;
-  font-size: 17px;
+  font-size: 16px;
   position: relative;
   transform: translate(10px, 80px);
   align-items: center;
   text-align: center;
+  margin-right: 13px;
 }
 
 .content-bentuk2 p {
@@ -499,18 +511,22 @@ h1 {
 .gender-equality-0-1 {
   width: 550px;
   height: 430px;
+  border-radius: 60px;
 }
 .content-gender-equality-0-1 {
   width: 550px;
   height: 425px;
+  border-radius: 20px 0 0 20px;
 }
 .gender-equality-1-1 {
   width: 550px;
   height: 425px;
+  border-radius: 60px;
 }
 .content-gender-equality-1-1 {
   width: 550px;
   height: 425px;
+  border-radius: 0 20px 20px 0;
 }
 .bentuk4 {
   width: 600px;
@@ -528,11 +544,12 @@ h1 {
 .bentuk4 p {
   font-family: var(--font-jost);
   font-weight: 800;
-  font-size: 17px;
+  font-size: 16px;
   position: relative;
   transform: translate(10px, 80px);
   align-items: center;
   text-align: center;
+  margin-right: 50px;
 }
 .content-bentuk3 p {
   font-family: var(--font-jost);
@@ -864,7 +881,7 @@ hr {
   position: relative;
   top: 50%;
   left: 32%;
-  border: #005a4a solid 5px;
+  border: #c07117 solid 5px;
   border-radius: 20px;
   padding: 25px;
 }
@@ -882,4 +899,5 @@ hr {
 
 #contentDetail .detail__info p {
   font-size: 25px;
+  text-align: justify;
 }
