@@ -65,6 +65,10 @@ document.querySelector('#hamburgerButton').onclick = () => {
 // klik luar hambtn
 const hamburger = document.querySelector('#hamburgerButton')
 
+document.querySelector('#linka').onclick = () => {
+  navbarNav.classList.remove('active')
+}
+
 document.addEventListener('click', function (e) {
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove('active')
