@@ -8,6 +8,7 @@ import DiscussionRoom from '../scripts/views/pages/discussion'
 import DetailTwi from '../scripts/views/pages/detail-twi'
 import DetailGec from '../scripts/views/pages/detail-gec'
 import DetailTc from '../scripts/views/pages/detail-tc1'
+import AboutUs from '../scripts/views/pages/about-us'
 
 const routes = {
   '/': Home, // default page
@@ -21,7 +22,8 @@ const routes = {
   '/detail-twi/:id': DetailTwi,
   '/detail-gec/:id': DetailGec,
   '/detail-tc1/:id': DetailTc,
-  '/detail-tc2/:id': DetailTc
+  '/detail-tc2/:id': DetailTc,
+  '/aboutus': AboutUs
 }
 
 export default routes

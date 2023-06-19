@@ -901,3 +901,7 @@ hr {
   font-size: 25px;
   text-align: justify;
 }
+
+.logo-link {
+  width: 250px;
+}
