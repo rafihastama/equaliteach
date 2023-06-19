@@ -475,7 +475,6 @@ h1 {
   right: 2px;
 }
 
-
 .bentuk3{
   position: relative;
   transform: translate(100px, 25px);
@@ -884,6 +883,7 @@ hr {
   border: #c07117 solid 5px;
   border-radius: 20px;
   padding: 25px;
+  transform: translateX(-100px);
 }
 
 #contentDetail img {
