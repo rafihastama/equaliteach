@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #twiContentContainer,
     #gecContentContainer {
         grid-template-columns: repeat(3, 1fr);
@@ -24,14 +24,14 @@
 }
 
 
-@media (max-width: 1135px) {
+@media screen and (max-width: 1135px) {
     .hero-hub-gender-1-icon {
         width: 950px;
         height: 450px;
     }
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .content-bentuk2 p {
         font-size: 45px;
     }
@@ -41,7 +41,7 @@
     }
 }
 
-@media (max-width: 1035px) {
+@media screen and (max-width: 1035px) {
     .content-bentuk2 p {
         font-size: 30px;
     }
@@ -61,30 +61,42 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     #twiContentContainer,
     #gecContentContainer {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width: 960px) {
-    .content-btn-smr2 {
-        transform: translate(0, 100px);
+    #contentDetail {
+        position: relative;
+        left: 20%;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 960px) {
+    .content-btn-smr2 {
+        transform: translate(0, 100px);
+    }
+    #contentDetail {
+        width: 750px;
+        left: 26%;
+    }
+    #contentDetail img {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     #hamburgerButton {
         display: inline-block;
     }
 
     .navbar .navbar-nav {
+        padding: 20px;
         position: absolute;
-        top: 100%;
+        top: 0;
         right: -100%;
         background: white;
-        width: 30rem;
+        width: 100%;
         height: 100vh;
         transition: 0.3s;
     }
@@ -125,19 +137,185 @@
     .content-bentuk3 p {
         font-size: 20px;
     }
+    .content {
+        display: grid;
+    }
+        
+    .content1 {
+        z-index: 1;
+        transform: translateX(-10px);
+    }
+        
+    .content2 {
+        grid-template-columns: repeat(1, 1fr);
+        transform: translateX(-70px);
+    }
+    #contentDetail {
+        width: 600px;
+        left: 28%;
+    }
+    #contentDetail img {
+        width: 500px;
+    }
+    .content-gender-equality-0-1{
+        transform: translateX(-20px);
+    }
+    .content-bentuk2{
+        transform: translateX(-20px);
+    }
+    .content-gender-equality-1-1{
+        transform: translateX(-20px);
+    }
+    .content-bentuk3{
+        transform: translateX(-20px);
+    }
+    .bentuk1 p {
+        font-size: 20px;
+    }
+
+    .bentuk4 p {
+        font-size: 20px;
+    }
+    .bentuk4{
+        border-radius: 20px;
+        width: 650px;
+        transform: translateY(20px);
+        left: 20%;
+    }
+    .bentuk1{
+        border-radius: 20px;
+        width: 650px;
+    }
+
+    .gender-equality-1-1 {
+        width: 650px;
+    }
+
+    .gender-equality-0-1 {
+        width: 650px;
+    }
+    .btn-smr2{
+        position: relative;
+        transform: translate(80px, 150px);
+    }
+    .btn-smr1{
+        position: relative;
+        transform: translate(80px, 150px);
+    }
   }
 
-  @media (max-width: 700px) {
+  @media screen and (max-width: 700px) {
     .hero-hub-gender-1-icon {
         width: 650px;
         height: 280px;
     }
+    .content1{
+        z-index: 1;
+        transform: translateX(-10px);
+    }
+    .content2{
+        grid-template-columns: repeat(1,1fr);
+        transform: translateX(-70px);
+    }
+    #contentDetail {
+        max-width: 500px;
+        left: 30%;
+    }
+    #contentDetail img {
+        width: 350px;
+    }
+    .content-gender-equality-0-1{
+        transform: translateX(-20px);
+    }
+    .content-bentuk2{
+        transform: translateX(-20px);
+    }
+    .content-gender-equality-1-1{
+        transform: translateX(-20px);
+    }
+    .content-bentuk3{
+        transform: translateX(-20px);
+    }
+    .bentuk1 p {
+        font-size: 18px;
+    }
+
+    .bentuk4 p {
+        font-size: 18px;
+    }
+    .bentuk4{
+        width: 600px;
+    }
+    .bentuk1{
+        width: 600px;
+    }
+
+    .gender-equality-1-1 {
+        width: 600px;
+    }
+
+    .gender-equality-0-1 {
+        width: 600px;
+    }
 }
 
-  @media (max-width: 650px) {
+  @media screen and (max-width: 650px) {
     #twiContentContainer,
     #gecContentContainer {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .hero-hub-gender-1-icon {
+        width: 500px;
+        height: auto;
+    }
+    .bentuk1 p {
+        font-size: 10px;
+    }
+
+    .bentuk4 p {
+        font-size: 10px;
+    }
+    .bentuk4{
+        width: 500px;
+    }
+    .bentuk1{
+        width: 500px;
+    }
+
+    .gender-equality-1-1 {
+        width: 500px;
+    }
+
+    .gender-equality-0-1 {
+        width: 500px;
+    }
+    .content1{
+        z-index: 1;
+        transform: translateX(-10px);
+    }
+    .content2{
+        grid-template-columns: repeat(1,1fr);
+        transform: translateX(-70px);
+    }
+    #contentDetail {
+        position: relative;
+        max-width: 350px;
+        left: 39%;
+    }
+    #contentDetail img {
+        width: 200px;
+    }
+    .content-gender-equality-0-1{
+        transform: translateX(-20px);
+    }
+    .content-bentuk2{
+        transform: translateX(-20px);
+    }
+    .content-gender-equality-1-1{
+        transform: translateX(-20px);
+    }
+    .content-bentuk3{
+        transform: translateX(-20px);
     }
 
 }
