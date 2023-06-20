@@ -131,7 +131,7 @@ const contentSelection = () => `
   <div class="pilihan-content">
     <div class="top-row">
       <div class="content-bentuk1">
-        <img class="content-gender-equality-0-1" alt="" src="https://i.postimg.cc/yYpXjw1Q/gender-equall.png" />
+        <img class="content-gender-equality-0-1" alt="" src="/assets/gender-equal.png" />
       </div>
         
       <div class="content-bentuk2">
@@ -148,7 +148,7 @@ const contentSelection = () => `
       </div>
       
       <div class="content-bentuk4">
-        <img class="content-gender-equality-1-1" alt="" src="https://i.postimg.cc/RhzbM26Q/twii.png" />
+        <img class="content-gender-equality-1-1" alt="" src="/assets/twi.png" />
       </div>
     </div>
   </div>
