@@ -13,6 +13,7 @@
 body {
     background-color: var(--color-gray-200);
     font-family: var(--font-public-sans);
+    overflow-x: hidden;
 }
 
 :root {
