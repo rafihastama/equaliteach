@@ -105,6 +105,9 @@
 
     .navbar .navbar-nav.active {
         right: 0;
+        width: 100%;
+        height: 150vh;
+        top: 100%;
     }
 
     .navbar .navbar-nav a {
@@ -329,4 +332,53 @@
         transform: translate(190px, 120px);
     }
 
+}
+@media screen and (max-width: 395px) {
+    .bentuk4 {
+        width: 400px;
+        transform: translate(25px, 40px);
+    }
+    .btn-smr2 {
+        position: relative;
+        transform: translate(135px, 120px);
+    }
+    .gender-equality-1-1 {
+        width: 400px;
+        transform: translate(5px, 1px);
+    }
+    .gender-equality-0-1 {
+        width: 400px;
+        transform: translate(-15px, 10px);
+    }
+    .bentuk1 {
+        width: 400px;
+        left: 1%;
+    }
+    .btn-smr1 {
+        position: relative;
+        transform: translate(140px, 120px);
+    }
+    .content-gender-equality-0-1 {
+        transform: translateX(-70px);
+        width: 300px;
+    }
+    .content-bentuk2 {
+        transform: translateX(-70px);
+    }
+    .content-bentuk3 {
+        transform: translateX(-70px);
+    }
+    .content-gender-equality-1-1 {
+        transform: translateX(-70px);
+        width: 300px;
+    }
+    #contentDetail {
+        position: relative;
+        max-width: 350px;
+        left: 33%;
+    }
+    .hero-hub-gender-1-icon {
+        width: 410px;
+        height: auto;
+    }
 }
