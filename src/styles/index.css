@@ -664,6 +664,15 @@ h1 {
   border-radius: 20px;
   font-family: var(--font-jost);
 }
+
+#btn-diskusi:focus {
+  outline: 4px dashed var(--color-darkseagreen);
+}
+
+#btnScrollToTop:focus {
+  outline: 4px dashed var(--color-darkseagreen);
+}
+
 #btnScrollToTop {
   font-size: 18px;
   border: none;
@@ -689,8 +698,17 @@ footer p {
   color: white;
   letter-spacing: 0.175em;
 }
-button {
+
+button,
+a {
+  min-width: 44px;
+  min-height: 44px;
   cursor: pointer;
+}
+
+button:focus,
+a:focus {
+  outline: 4px dashed var(--color-darkseagreen);
 }
 
 .balasan {
@@ -904,4 +922,18 @@ hr {
 
 .logo-link {
   width: 250px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -400px;
+  left: 0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }
