@@ -121,7 +121,7 @@ const homeItemTemplate = (content) => `
   </section>
 
   <div id="chatContainer" class="chat-container">
-    <button onclick="window.location.href='https://equaliteach-delta.vercel.app/diskusi'" id="btn-diskusi">Diskusi</button>
+    <button onclick="window.location.href='https://client-equaliteach.vercel.app/diskusi'" id="btn-diskusi">Diskusi</button>
 
     <button onclick="scrollToTop()" id="btnScrollToTop" title="Kembali ke atas">&#8679;</button>
   </div>`
