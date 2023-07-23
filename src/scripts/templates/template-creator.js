@@ -94,7 +94,7 @@ const homeItemTemplate = (content) => `
       <p>Sudah tercatat dengan baik bahwa Covid-19 telah menghambat kemajuan perempuan, yang menanggung sebagian besar tugas perawatan. 
       Namun, menurut The Washington Post, "pandemi hampir terlupakan di Perserikatan Bangsa-Bangsa dan janji-janji tahun lalu tidak terpenuhi." 
       Tahun lalu. . . . </p>
-        <a href="/#/detail-tc1/_xtWYiF5tiG5vtq1" onClick="scrollToTop()" class="btn-smr1">See More</a>
+        <a href="/#/detail-tc1/pBJHkJLwKlnmd8_d" onClick="scrollToTop()" class="btn-smr1">See More</a>
       </div>
 
       <div class="bentuk2">
@@ -115,7 +115,7 @@ const homeItemTemplate = (content) => `
 
       <div class="bentuk4">
         <p>Pada UNGA tahun ini, terbentuklah Platform Pemimpin Perempuan UNGA yang mengumpulkan kepala negara dan pemerintahan perempuan untuk menyoroti pentingnya kepemimpinan politik perempuan. Selama UNGA, mantan Presiden UNGA mengomentari bahwa. . .</p>
-        <a href="/#/detail-tc2/bhe0y2_5m9STeyvO" onClick="scrollToTop()" class="btn-smr2">See More</a>
+        <a href="/#/detail-tc2/YAaQfW4MNtF6lPbj" onClick="scrollToTop()" class="btn-smr2">See More</a>
       </div>
     </div>
   </section>
